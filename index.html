@@ -7,11 +7,38 @@
     <title>TechConnect</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<style> 
+ body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: #181616;
+    color: white;
+}
+.light-mode {
+    background-color: #fff;
+    color: black;
+}
+button {
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+</style>
+<body>  
+<body class="light-mode">
         <header>
             <h1>TechFuture Summit 2025</h1>
         </header>
-      
+        <button onclick="toggleMode()">Modo claro/escuro</button>
+        <script>
+            function toggleMode() {
+                const body = document.body;
+                body.classList.toggle("dark-mode");
+                body.classList.toggle("light-mode");
+            }
+        </script>
 
         <section id="sobre">
             <h2>Informações do Evento</h2>
