@@ -19,7 +19,7 @@ body {
   }
   
   h2 {
-    border-bottom: 2px solid #E94560;
+    border-bottom: 2px solid #0F3460;
     padding-bottom: 10px;
     margin-bottom: 20px;
   }
@@ -55,8 +55,8 @@ body {
   }
   
   button {
-    background-color: #E94560;
-    color: white;
+    background-color: #ccc;
+    color: rgb(12, 12, 12);
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -64,7 +64,7 @@ body {
   }
   
   button:hover {
-    background-color: #c63a4c;
+    background-color: #0F3460;
   }
   
   @media (max-width: 600px) {
